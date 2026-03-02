@@ -1,0 +1,36 @@
+
+> syntraflow-ai@1.0.0 dev
+> node scripts/run-next-clean.mjs dev --webpack
+
+▲ Next.js 16.1.6 (webpack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.101.101:3001
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 7s
+○ Compiling / ...
+ GET / 200 in 9.8s (compile: 9.6s, render: 190ms)
+ GET / 200 in 107ms (compile: 12ms, render: 94ms)
+○ Compiling /api/chatkit-session ...
+ POST /api/chatkit-session 200 in 4.2s (compile: 3.6s, render: 626ms)
+ GET /despre-proiect 200 in 677ms (compile: 610ms, render: 66ms)
+ GET / 200 in 26ms (compile: 7ms, render: 18ms)
+ GET /despre-proiect 200 in 30ms (compile: 3ms, render: 27ms)
+ GET /solutii 200 in 659ms (compile: 587ms, render: 72ms)
+ GET /solutii 200 in 53ms (compile: 5ms, render: 48ms)
+ GET /industrii 200 in 657ms (compile: 610ms, render: 48ms)
+ GET /industrii 200 in 24ms (compile: 3ms, render: 22ms)
+ GET /automatizari 200 in 1195ms (compile: 1120ms, render: 74ms)
+ GET /automatizari 200 in 31ms (compile: 9ms, render: 22ms)
+ GET / 200 in 21ms (compile: 7ms, render: 14ms)
+ GET / 200 in 212ms (compile: 7ms, render: 206ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET /despre-proiect 200 in 28ms (compile: 6ms, render: 22ms)
+ GET /automatizari 200 in 27ms (compile: 2ms, render: 24ms)
+ GET /studii-de-caz 200 in 704ms (compile: 617ms, render: 86ms)
+ GET /contact 200 in 958ms (compile: 908ms, render: 50ms)
+ GET /contact 200 in 28ms (compile: 4ms, render: 24ms)
+ GET / 200 in 23ms (compile: 7ms, render: 16ms)
+ GET /despre-proiect 200 in 38ms (compile: 10ms, render: 28ms)
+ GET /despre-proiect 200 in 28ms (compile: 5ms, render: 23ms)

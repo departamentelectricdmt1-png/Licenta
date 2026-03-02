@@ -95,10 +95,12 @@ Aplicatia va fi disponibila implicit la `http://localhost:3000`.
 
 ## Scripturi utile
 
-- `npm run dev` - porneste serverul local
-- `npm run build` - genereaza build-ul de productie
-- `npm run start` - porneste build-ul generat
+- `npm run dev` - porneste serverul local si ignora `OPENAI_*` mostenite din sistem, folosind valorile din `.env.local`
+- `npm run build` - genereaza build-ul de productie cu acelasi comportament pentru `OPENAI_*`
+- `npm run start` - porneste build-ul generat, tot cu prioritate pentru `.env.local`
 - `npm run check` - ruleaza verificarea TypeScript fara emitere
+
+Nota: proiectul foloseste un wrapper local in `scripts/run-next-clean.mjs` pentru a evita ca o cheie `OPENAI_API_KEY` setata la nivel de Windows / shell sa suprascrie accidental valorile din `.env.local`.
 
 ## Personalizare
 
