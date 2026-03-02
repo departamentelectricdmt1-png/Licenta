@@ -6,11 +6,15 @@
     "node": ">=20.11.0"
   },
   "scripts": {
-    "dev": "node scripts/run-next-clean.mjs dev --webpack",
-    "dev:turbo": "node scripts/run-next-clean.mjs dev --turbopack",
-    "build": "node scripts/run-next-clean.mjs build",
+    "dev": "next dev --webpack",
+    "dev:turbo": "next dev --turbopack",
+    "dev:clean": "node scripts/run-next-clean.mjs dev --webpack",
+    "dev:turbo:clean": "node scripts/run-next-clean.mjs dev --turbopack",
+    "build": "next build",
+    "build:clean": "node scripts/run-next-clean.mjs build",
     "preview": "npm run build && npm run start",
-    "start": "node scripts/run-next-clean.mjs start",
+    "start": "next start",
+    "start:clean": "node scripts/run-next-clean.mjs start",
     "check": "tsc --noEmit"
   },
   "dependencies": {

@@ -1,8 +1,8 @@
-# SyntraFlow AI
+# SyntraFlow
 
 Platforma web moderna construita pentru proiectul de licenta:
 
-**"Dezvoltarea unei platforme web moderne cu asistent virtual pentru automatizarea proceselor"**
+**"Proiectarea si dezvoltarea unei platforme web inteligente cu asistent virtual bazat pe inteligenta artificiala pentru automatizarea si optimizarea proceselor de interactiune cu clientii"**
 
 Aplicatia prezinta un website enterprise-style, complet original, cu accent pe:
 
@@ -14,7 +14,7 @@ Aplicatia prezinta un website enterprise-style, complet original, cu accent pe:
 
 ## Contextul proiectului
 
-SyntraFlow AI este gandit ca un demo de licenta care arata ca un produs real, nu doar ca o pagina de prezentare. Structura este pregatita pentru:
+SyntraFlow este gandit ca un demo de licenta care respecta direct tema academica si arata ca un produs real, nu doar ca o pagina de prezentare. Structura este pregatita pentru:
 
 - sustinere academica
 - portofoliu full-stack / UI-UX
@@ -95,12 +95,13 @@ Aplicatia va fi disponibila implicit la `http://localhost:3000`.
 
 ## Scripturi utile
 
-- `npm run dev` - porneste serverul local si ignora `OPENAI_*` mostenite din sistem, folosind valorile din `.env.local`
-- `npm run build` - genereaza build-ul de productie cu acelasi comportament pentru `OPENAI_*`
-- `npm run start` - porneste build-ul generat, tot cu prioritate pentru `.env.local`
+- `npm run dev` - porneste serverul local cu scriptul standard Next.js
+- `npm run build` - genereaza build-ul de productie folosind comanda standard Next.js (compatibila cu deploy-uri ca Netlify)
+- `npm run start` - porneste build-ul generat cu comanda standard Next.js
 - `npm run check` - ruleaza verificarea TypeScript fara emitere
+- `npm run dev:clean` / `build:clean` / `start:clean` - ruleaza aceleasi comenzi prin wrapper-ul local care elimina `OPENAI_*` mostenite din shell
 
-Nota: proiectul foloseste un wrapper local in `scripts/run-next-clean.mjs` pentru a evita ca o cheie `OPENAI_API_KEY` setata la nivel de Windows / shell sa suprascrie accidental valorile din `.env.local`.
+Nota: wrapper-ul local din `scripts/run-next-clean.mjs` ramane disponibil doar pentru rulare locala, dar scripturile implicite folosesc acum comenzile standard `next` pentru a evita esecuri in medii de build unde fisierul wrapper nu este prezent.
 
 ## Personalizare
 
